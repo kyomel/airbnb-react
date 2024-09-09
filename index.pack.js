@@ -432,7 +432,11 @@ function App() {
         "div",
         null,
         _react2.default.createElement(_Navbar2.default, null),
-        cards
+        _react2.default.createElement(
+            "section",
+            { className: "cards-list" },
+            cards
+        )
     );
 }
 
@@ -528,13 +532,13 @@ function Card(props) {
       )
     ),
     _react2.default.createElement(
-      "h2",
-      null,
+      "p",
+      { className: "card--title" },
       props.title
     ),
     _react2.default.createElement(
       "p",
-      null,
+      { className: "card--price" },
       _react2.default.createElement(
         "span",
         { className: "bold" },
